@@ -11,22 +11,25 @@ resta:
 modulo:"
 */
 
-let nombreApellido = prompt("Introduce el nombre y el apellido");
-console.log(nombreApellido);
-let numero1 = prompt("Introduce el valor 1");
-let numero2 = prompt("Introduce el valor 2");
-let confirmacion = confirm('Quieres realizar las operaciones');
-
-if (confirmacion){
-    let suma = numero1 + numero2;
-    let resta = numero1 - numero2;
-    let multiplicacion =numero1 * numero2;
-    let division = numero1 / numero2;
-    let modulo = numero1 % numero2;
-
-    console.log(`la suma es ${suma}`);
-    console.log(`la resltiplicacion es ${suma}`);
-    console.log(`la mues ${suma}`);
-    console.log(`la suma es ${suma}`);
-    console.log(`la suma es ${suma}`);
+let nombre = prompt("Por favor introduce tu nombre");
+let apellido = prompt("Por favor introduce tu apellido");
+let numero1 = prompt(
+  `Bienvenido  ${nombre} ${apellido} introduce el primer operando`
+);
+let numero2 = prompt(`Introduce el segundo operando`);
+let confirmacion = confirm("Estas seguro que quieres continuar");
+if (confirmacion) {
+  suma = Number(numero1) + Number(numero2);
+  resta = numero1 - numero2;
+  multiplicacion = numero1 * numero2;
+  division = numero1 / numero2;
+  modulo = numero1 % numero2;
+  alert(`El resultado de las operaciones entre ${numero1} y ${numero2} es:
+    \nMultiplicación: ${multiplicacion}
+    \nDivision: ${division}
+    \nResta: ${resta}
+    \nSuma: ${suma}
+    `);
+} else {
+  alert(`${nombre} hasta la proxima`);
 }
