@@ -57,3 +57,34 @@ switch (nota) {
   default:
     break;
 }
+
+//while
+/* let numero = 30;
+
+while (numero>10) {
+    console.log('numero mayor que 10');
+    numero --;
+} */
+
+
+//for --> repeticiones sobre estructuras --> array
+
+let numeros = [1,2,3,4,5,6,7] //number
+
+//let numeroCosas = [4,"hola", true] //any
+/* console.log(numeros[0]);
+console.log(numeros.length); */
+
+/* for (let index = 0; index < numeros.length; index++) {
+    console.log(numeros[index]);
+}
+ */
+
+//let contador = 0;
+numeros.forEach((element,indice) =>{
+    if (indice %2 == 0){
+        console.log(element);
+    }
+    //contador ++;
+})
+
