@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./utils/css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.4/underscore-umd-min.js"></script>
-    
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container p-4">
+      <h1>Blackjack</h1>
+      <div class="row w-50 p-3" style="float: center">
+        <div class="col">
+          <button style= "width: 120px;" type="button" class="btn btn-primary" id="boton_iniciar">
+            Iniciar 
+          </button>
+        </div>
+        <div class="col">
+          <button style= "width: 120px;" type="button" class="btn btn-secondary" id="boton_pedir">
+            Pedir
+          </button>
+        </div>
+        <div class="col">
+          <button style= "width: 120px;" type="button" class="btn btn-secondary" id="boton_plantar">
+            Plantarse
+          </button>
+        </div>
+        <div class="col">
+          <button style= "width: 120px;" type="button" class="btn btn-danger" id="boton_reiniciar">
+            Reiniciar
+          </button>
+        </div>
+      </div>
+
+      <div id="contenedorJ1">
+        <p>
+          Nombre: <span></span><br />
+          Puntos: <bold>0</bold>
+        </p>
+        <div id="cartasJ1" class="contenedor_cartas"></div>
+      </div>
+
+      <div id="contenedorJ2">
+        <p>Nombre: Banca<br />puntos: <bold>0</bold></p>
+        <div id="cartasJ2" class="contenedor_cartas"></div>
+      </div>
+    </div>
+
     <script src="./utils/js/blackjack.js"></script>
-</body>
+  </body>
 </html>
