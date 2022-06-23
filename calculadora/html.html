@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./utils/css/style.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="container">
+        <p id="operacion"></p>
+        <button id="borrarTodo" class="otro">C</button>
+        <button id="division" class="otro">/</button>
+        <button id="multiplicacion" class="otro">x</button>
+        <button id="borrar" class="otro">
+          <img src="./utils/images/borrar.png" style="width: 80px" />
+        </button>
+        <button id="siete" class="numero">7</button>
+        <button id="ocho" class="numero">8</button>
+        <button id="nueve" class="numero">9</button>
+        <button id="resta" class="otro">-</button>
+        <button id="cuatro" class="numero">4</button>
+        <button id="cinco" class="numero">5</button>
+        <button id="seis" class="numero">6</button>
+        <button id="suma" class="otro">+</button>
+        <button id="uno" class="numero">1</button>
+        <button id="dos" class="numero">2</button>
+        <button id="tres" class="numero">3</button>
+        <button id="elevado" class="otro">^</button>
+        <button id="cero" class="numero">0</button>
+        <button id="coma" class="otro">.</button>
+        <button id="igual">=</button>
+      </div>
+    </div>
+    <div class="historial">
+      <div class="operaciones">
+        <h1 style="text-align: center">HISTORIAL DE OPERACIONES</h1>
+        <div class="cajas"></div>
+        <button id="borrarhistorial">BORRAR HISTORIAL</button>
+      </div>
+    </div>
+    <script src="./utils/js/calculadora.js"></script>
+  </body>
+</html>

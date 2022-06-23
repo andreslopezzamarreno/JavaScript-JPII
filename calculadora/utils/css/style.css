@@ -1,0 +1,116 @@
+body {
+  background-color: #b3e8e5;
+}
+
+.calculadora {
+  margin-top: 3%;
+  width: 60%;
+  float: left;
+}
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 70px;
+  vertical-align: bottom;
+  background-color: #b3e8e5;
+  /* border: 1px solid black; */
+  margin: auto;
+  border-radius: 25px;
+}
+
+.operaciones {
+  width: 90%;
+  margin: 0;
+}
+
+.historial {
+  width: 40%;
+  float: right;
+  margin-top: 3%;
+}
+
+.cajas{
+  max-height: 1000px;
+}
+
+#borrarhistorial{
+  width: 98%;
+  font-size: 30px;
+  border: 2px solid black;
+  color: white;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #005555;
+}
+
+.results {
+  font-size: 50px;
+  background-color: #82dbd8;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+#operacion {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+  padding-right: 15px;
+  background: #005555;
+  height: 104px;
+  font-size: 90px;
+  border: 0.2px solid black;
+  border-radius: 70px;
+  margin: 10px;
+  padding-top: 5px;
+  background-color: #b3f9ff;
+  box-shadow: 1px 1px 10px 1px black;
+  word-wrap: break-word;
+}
+
+#igual {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  vertical-align: center;
+  background-color: #005555;
+  /* padding-top: 60px; */
+}
+
+#igual:hover {
+  background-color: #82dbd8;
+}
+
+.otro {
+  background-color: #2f8f9d;
+  height: 80%;
+}
+
+.numero {
+  height: 90.9px;
+}
+
+button{
+  font-size: 60px;
+  border: 0.2px solid black;
+  border-radius: 70px;
+  margin: 10px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: #b3f9ff;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+button:hover {
+  background-color: #82dbd8;
+}
+
+.borrarhistorial{
+  font-size: 30px !important;
+  border: 0.2px solid black;
+  border-radius: 70px;
+  text-align: center;
+}

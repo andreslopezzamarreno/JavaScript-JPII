@@ -117,8 +117,8 @@ function turnoBanca() {
 
 
 function sacarCarta(jugador) {
-  let carta
-  let carta = baraja.pop();
+  let carta;
+  carta = baraja.pop();
   let imagenCarta = document.createElement("img");
   imagenCarta.setAttribute("src", carta.getRuta);
   imagenCarta.className = "carta";
@@ -127,7 +127,7 @@ function sacarCarta(jugador) {
   (puntos+jugador).innerText = (contadorPuntos+jugador);
 
   setTimeout(() => {
-    if ((contadorPuntos+jugador) >= 21) {
+    if ((contadorPuntosJ2+jugador) >= 21) {
       //contadorPuntosJ1 > 21 && alert("has perdido");
       turnoBanca();
     }
