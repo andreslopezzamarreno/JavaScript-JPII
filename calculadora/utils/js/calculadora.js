@@ -249,6 +249,8 @@ function activarBotones() {
 
 
 
-/* falta controlar que al borrar un signo se pueda poner otro
+/* 
+falta controlar que al borrar un signo se pueda poner otro
 
-falta controlar que si solo se pone un numero no te deje hacer la operacion porque pone NaN*/
+falta controlar que si solo se pone un numero no te deje hacer la operacion porque pone NaN
+*/
